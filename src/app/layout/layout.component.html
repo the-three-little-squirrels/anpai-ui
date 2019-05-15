@@ -1,0 +1,13 @@
+<nz-layout style="height: 100%">
+  <nz-sider [nzCollapsed]="isCollapsed">
+    <ap-menu></ap-menu>
+  </nz-sider>
+  <nz-layout>
+    <nz-header style="background-color: #fff;padding-left: 30px">
+      <ap-header></ap-header>
+    </nz-header>
+    <nz-content>
+      <router-outlet></router-outlet>
+    </nz-content>
+  </nz-layout>
+</nz-layout>
