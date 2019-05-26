@@ -8,7 +8,9 @@
     </nz-header>
     <nz-content>
       <ap-breadcrumb [nzAutoGenerate]="true"></ap-breadcrumb>
-      <router-outlet></router-outlet>
+      <div [@routeAnimation]="routerStateCode">
+        <router-outlet></router-outlet>
+      </div>
     </nz-content>
   </nz-layout>
 </nz-layout>
