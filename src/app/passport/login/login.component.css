@@ -1,0 +1,51 @@
+.login-form {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-form-forgot {
+  float: right;
+}
+
+.login-form-button {
+  width: 100%;
+}
+
+.login-form-wapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 布局 */
+* {
+  margin: 0;
+  padding: 0
+}
+
+html,
+body {
+  height: 100%
+}
+
+/*这里很关键*/
+
+.outer-wrap {
+  /*只有同时为html和body设置height: 100%时，这里才生效，
+            并且随浏览器窗口变化始终保持和浏览器视窗等高*/
+  height: 100%;
+  position: relative;
+  background-color: #f3f3f3
+}
+
+.login-panel {
+  width: 400px;
+  height: 420px;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 0 0 100px rgba(0, 0, 0, .08);
+}

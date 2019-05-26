@@ -1,3 +1,22 @@
 <button nz-button [nzType]="'primary'" (click)="toggleCollapsed()" style="margin-bottom: 10px;">
-    <i nz-icon [type]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
-  </button>
+  <i nz-icon [type]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
+</button>
+<div class="setting">
+  <nz-dropdown>
+    <a nz-dropdown>
+      <nz-avatar nzIcon="user"></nz-avatar>
+    </a>
+
+    <ul nz-menu>
+      <li nz-submenu>
+        <span title>语言</span>
+        <ul>
+          <li nz-menu-item>中文</li>
+          <li nz-menu-item>英文</li>
+        </ul>
+      </li>
+      <li nz-menu-divider></li>
+      <li nz-menu-item>登出</li>
+    </ul>
+  </nz-dropdown>
+</div>
