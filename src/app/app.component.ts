@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'ap-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'anpai-ui';
+
+  constructor(translate: TranslateService) {
+    translate.setDefaultLang('zh-cn');
+    translate.use('zh-cn');
+  }
 }

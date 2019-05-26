@@ -9,6 +9,9 @@ const routes: Routes = [
     path: 'main',
     component: LayoutComponent,
     loadChildren: './routes/routes.module#RoutesModule',
+    data: {
+      breadcrumb: 'Home'
+    }
   },
   // 登录模块
   { path: 'passport', loadChildren: './passport/passport.module#PassportModule' }
