@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LayoutService } from '../layout.service';
 import { TranslateService } from '@ngx-translate/core';
+import { LocalStorageService } from 'src/app/core/providers/local-storage.service';
 
 @Component({
     selector: 'ap-header',
@@ -13,7 +14,8 @@ export class HeaderComponent implements OnInit {
 
     constructor(
         private layout: LayoutService,
-        private translate: TranslateService
+        private translate: TranslateService,
+        private localStorage: LocalStorageService
     ) { }
 
     ngOnInit() { }
@@ -26,7 +28,12 @@ export class HeaderComponent implements OnInit {
         this.layout.setIsCollapsed(this.isCollapsed);
     }
 
+    /**
+     * 切换语言
+     * @param value 切换语言
+     */
     switchLang(value) {
         this.translate.use(value);
+        this.localStorage.set('lang', value);
     }
 }
