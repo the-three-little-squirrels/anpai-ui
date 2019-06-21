@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ap-dw": [
+        "dist/ap-dw"
+      ],
+      "ap-dw/*": [
+        "dist/ap-dw/*"
+      ]
+    }
   }
 }
