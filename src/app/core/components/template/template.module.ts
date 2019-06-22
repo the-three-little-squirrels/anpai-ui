@@ -4,13 +4,17 @@ import { ListComponent } from './list/list.component';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { CommonModule } from '@angular/common';
 import { InfoComponent } from './info/info.component';
-import { TextComponent } from './info/components/text/text.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { TemplateService } from './template.service';
+import { InfoItemComponent } from './info/info-item/info-item.component';
 
 
 @NgModule({
     imports: [
         NgZorroAntdModule,
-        CommonModule
+        CommonModule,
+        ReactiveFormsModule,
+        FormsModule
     ],
     exports: [
         TemplateComponent,
@@ -21,8 +25,10 @@ import { TextComponent } from './info/components/text/text.component';
         TemplateComponent,
         ListComponent,
         InfoComponent,
-        TextComponent
+        InfoItemComponent
     ],
-    providers: [],
+    providers: [
+        TemplateService
+    ],
 })
 export class TemplateModule { }

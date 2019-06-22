@@ -24,7 +24,16 @@ export interface TemplateItem {
     isSorted: boolean;
     isFilter: boolean;
     filterType: string[];
-    groupName: string;
+    groupIndex: number;
     span: number;
     child: TemplateItem[];
+}
+export interface Template {
+    templateNo: string;
+    templateName: string;
+    type: 'Info' | 'List';
+    span: number;
+    attributes: TemplateItem[];
+    groupName: string[];
+    export: boolean;
 }
