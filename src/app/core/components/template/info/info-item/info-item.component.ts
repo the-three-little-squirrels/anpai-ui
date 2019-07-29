@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+import { ItemBase } from '../../models/item-base';
+import { EditType } from '../../models/template-options';
 
 @Component({
   selector: 'ap-info-item',
@@ -6,6 +9,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./info-item.component.css']
 })
 export class InfoItemComponent implements OnInit {
+
+  EditType = EditType;
+
+  @Input() formGroup: FormGroup;
+  @Input() itemBase: ItemBase;
 
   constructor() { }
 

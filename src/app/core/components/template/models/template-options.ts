@@ -37,3 +37,18 @@ export interface Template {
     groupName: string[];
     export: boolean;
 }
+
+export enum EditType {
+    TEXT = 'Text',
+    SELECT = 'Select',
+    RADIO = 'Radio',
+    CHECKBOX = 'CheckBox',
+    TEXTAREA = 'TextArea',
+    DATE = 'Date',
+    SEARCH = 'Search',
+    SINGLEWITHDIRTREE = 'SingleWithDirTree',
+    SINGLETREE = 'SingleTree',
+    MULTIPLEWITHDIRTREE = 'MultipleWithDirTree',
+    MULTIPLETREE = 'MultipleTree',
+    CASCADER = 'Cascader'
+}

@@ -25,7 +25,7 @@ export class ItemBase {
     isSorted: boolean;
     isFilter: boolean;
     filterType: string[];
-    groupName: string;
+    groupIndex: number;
     span: number;
     child: ItemBase[];
     constructor(item: {
@@ -54,7 +54,7 @@ export class ItemBase {
         isSorted: boolean;
         isFilter: boolean;
         filterType: string[];
-        groupName: string;
+        groupIndex: number;
         span: number;
         child: ItemBase[];
     }) {
@@ -66,8 +66,8 @@ export class ItemBase {
             this.defaultValue = item.defaultValue;
             this.datePattern = item.datePattern;
             this.pattern = item.pattern;
-            this.max = item.max;
-            this.min = item.min;
+            this.max = item.max ? item.max : Infinity;
+            this.min = item.min ? item.min : -Infinity;
             this.suffix = item.suffix;
             this.codeId = item.codeId;
             this.itemId = item.itemId;
@@ -83,7 +83,7 @@ export class ItemBase {
             this.isSorted = item.isSorted;
             this.isFilter = item.isFilter;
             this.filterType = item.filterType;
-            this.groupName = item.groupName;
+            this.groupIndex = item.groupIndex;
             this.span = item.span;
             this.child = item.child;
         }

@@ -1,1 +1,10 @@
-<ap-info-item></ap-info-item>
+<form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm()">
+  <nz-form-item>
+    <nz-form-control nzErrorTip="Please input your username!">
+      <nz-tree-select style="width: 250px" nzPlaceHolder="Please select" [nzDropdownMatchSelectWidth]="true"
+        [nzDropdownStyle]="{ 'max-height': '300px' }" formControlName="userName" [nzNodes]="nodes" [nzAsyncData]="true"
+        (nzExpandChange)="onExpandChange($event)">
+      </nz-tree-select>
+    </nz-form-control>
+  </nz-form-item>
+</form>
