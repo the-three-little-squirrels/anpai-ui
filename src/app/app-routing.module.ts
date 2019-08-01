@@ -8,13 +8,13 @@ const routes: Routes = [
   {
     path: 'main',
     component: LayoutComponent,
-    loadChildren: './routes/routes.module#RoutesModule',
+    loadChildren: () => import('./routes/routes.module').then(m => m.RoutesModule),
     data: {
       breadcrumb: 'Home'
     }
   },
   // 登录模块
-  { path: 'passport', loadChildren: './passport/passport.module#PassportModule' }
+  { path: 'passport', loadChildren: () => import('./passport/passport.module').then(m => m.PassportModule) }
 ];
 
 @NgModule({
