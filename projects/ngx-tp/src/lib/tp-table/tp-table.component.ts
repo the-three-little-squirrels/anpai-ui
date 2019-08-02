@@ -1,15 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import { TpComponent } from '../models/tp.component';
 
 @Component({
-  selector: 'lib-tp-table',
-  templateUrl: './tp-table.component.html',
-  styleUrls: ['./tp-table.component.css']
+    selector: 'lib-tp-table',
+    templateUrl: './tp-table.component.html',
+    styleUrls: ['./tp-table.component.css']
 })
-export class TpTableComponent implements OnInit {
+export class TpTableComponent extends TpComponent implements OnInit {
 
-  constructor() { }
+    constructor() {
+        super();
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
 
 }
