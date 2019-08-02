@@ -1,4 +1,13 @@
+import { OnInit, Input } from '@angular/core';
+
 export class TpComponent implements OnInit {
+
+    @Input('tpNo') _tpNo: string;
+
+
+    ngOnInit(): void {
+
+    }
 
 
 }

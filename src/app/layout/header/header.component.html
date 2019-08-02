@@ -2,11 +2,11 @@
   <i nz-icon [type]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
 </button>
 <div class="setting">
-  <nz-dropdown>
-    <a nz-dropdown>
-      <nz-avatar nzIcon="user"></nz-avatar>
-    </a>
 
+  <a nz-dropdown [nzDropdownMenu]="menu">
+    <nz-avatar nzIcon="user"></nz-avatar>
+  </a>
+  <nz-dropdown-menu #menu>
     <ul nz-menu>
       <li nz-submenu>
         <span title>语言</span>
@@ -18,5 +18,5 @@
       <li nz-menu-divider></li>
       <li nz-menu-item [routerLink]="['/passport/login']">登出</li>
     </ul>
-  </nz-dropdown>
+  </nz-dropdown-menu>
 </div>
