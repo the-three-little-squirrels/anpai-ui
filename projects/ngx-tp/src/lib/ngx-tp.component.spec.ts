@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ApDwComponent } from './ap-dw.component';
+import { NgxTpComponent } from './ngx-tp.component';
 
-describe('ApDwComponent', () => {
-  let component: ApDwComponent;
-  let fixture: ComponentFixture<ApDwComponent>;
+describe('NgxTpComponent', () => {
+  let component: NgxTpComponent;
+  let fixture: ComponentFixture<NgxTpComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ApDwComponent ]
+      declarations: [ NgxTpComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ApDwComponent);
+    fixture = TestBed.createComponent(NgxTpComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

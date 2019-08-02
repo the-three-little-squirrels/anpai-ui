@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-ap-dw',
+  selector: 'lib-ngx-tp',
   template: `
     <p>
-      ap-dw works!
+      ngx-tp works!
     </p>
   `,
   styles: []
 })
-export class ApDwComponent implements OnInit {
+export class NgxTpComponent implements OnInit {
 
   constructor() { }
 

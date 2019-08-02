@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ApDwService } from './ap-dw.service';
+import { NgxTpService } from './ngx-tp.service';
 
-describe('ApDwService', () => {
+describe('NgxTpService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: ApDwService = TestBed.get(ApDwService);
+    const service: NgxTpService = TestBed.get(NgxTpService);
     expect(service).toBeTruthy();
   });
 });

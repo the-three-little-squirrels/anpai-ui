@@ -25,6 +25,12 @@
       ],
       "ap-dw/*": [
         "dist/ap-dw/*"
+      ],
+      "ngx-tp": [
+        "dist/ngx-tp"
+      ],
+      "ngx-tp/*": [
+        "dist/ngx-tp/*"
       ]
     }
   }

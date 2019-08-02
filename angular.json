@@ -35,12 +35,10 @@
           },
           "configurations": {
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
+              "fileReplacements": [{
+                "replace": "src/environments/environment.ts",
+                "with": "src/environments/environment.prod.ts"
+              }],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -50,13 +48,11 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                }
-              ]
+              "budgets": [{
+                "type": "initial",
+                "maximumWarning": "2mb",
+                "maximumError": "5mb"
+              }]
             }
           }
         },
@@ -136,33 +132,33 @@
         }
       }
     },
-    "ap-dw": {
-      "root": "projects/ap-dw",
-      "sourceRoot": "projects/ap-dw/src",
+    "ngx-tp": {
       "projectType": "library",
+      "root": "projects/ngx-tp",
+      "sourceRoot": "projects/ngx-tp/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ap-dw/tsconfig.lib.json",
-            "project": "projects/ap-dw/ng-package.json"
+            "tsConfig": "projects/ngx-tp/tsconfig.lib.json",
+            "project": "projects/ngx-tp/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ap-dw/src/test.ts",
-            "tsConfig": "projects/ap-dw/tsconfig.spec.json",
-            "karmaConfig": "projects/ap-dw/karma.conf.js"
+            "main": "projects/ngx-tp/src/test.ts",
+            "tsConfig": "projects/ngx-tp/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-tp/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ap-dw/tsconfig.lib.json",
-              "projects/ap-dw/tsconfig.spec.json"
+              "projects/ngx-tp/tsconfig.lib.json",
+              "projects/ngx-tp/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
