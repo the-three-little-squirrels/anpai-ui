@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TpComponent } from '../models/tp.component';
 
 @Component({
-    selector: 'lib-tp-table',
+    selector: 'tp-table',
     templateUrl: './tp-table.component.html',
     styleUrls: ['./tp-table.component.css']
 })
