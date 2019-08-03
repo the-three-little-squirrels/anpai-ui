@@ -3,13 +3,11 @@ import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { TemplateModule } from '../core/components/template/template.module';
 import { NzBreadCrumbModule } from '../core/components/breadcrumb/nz-breadcrumb.module';
 import { NgxTpModule } from 'projects/ngx-tp/src/public-api';
 
 
 const MODULES = [
-    TemplateModule,
     NzBreadCrumbModule
 ];
 

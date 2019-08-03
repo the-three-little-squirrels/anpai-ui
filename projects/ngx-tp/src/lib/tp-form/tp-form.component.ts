@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-tp-form',
+  selector: 'tp-form',
   templateUrl: './tp-form.component.html',
   styleUrls: ['./tp-form.component.css']
 })
